@@ -20,10 +20,6 @@ public class Enemy4Movement : MonoBehaviour
     void Update()
     {
         Move();
-        if (Vector3.Distance(transform.position, target.position) >= radius)
-        {
-            this.GetComponent<Enemy2Movement>().enabled = true;
-        }
     }
 
     void Move()

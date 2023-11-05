@@ -20,5 +20,10 @@ public class EnemyLife : MonoBehaviour
         {
             Elife -= 1;
         }
+
+        if (collision.gameObject.CompareTag("Limit"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
