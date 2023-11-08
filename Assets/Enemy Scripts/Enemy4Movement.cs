@@ -15,6 +15,7 @@ public class Enemy4Movement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        target = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     void Update()
@@ -24,12 +25,17 @@ public class Enemy4Movement : MonoBehaviour
 
     void Move()
     {
+
         if (Vector3.Distance(transform.position, target.position) <= radius)
         {
             this.GetComponent<EnemyMovement>().enabled = false;
-            Vector3 tempDirection = target.position - transform.position;
+            Vector3 tempDirection = target.transform.position - transform.position;
             direction = tempDirection.normalized;
-            rb.velocity = direction * speed;
+            rb.velocity = direction * speed;       
+        }
+        else
+        {
+            this.GetComponent<EnemyMovement>().enabled = true ;
         }
     }
     private void OnDrawGizmos()

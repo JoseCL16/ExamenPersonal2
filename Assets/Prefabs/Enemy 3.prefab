@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 7029717553915068138}
-  speed: 5
+  speed: 3
   sway: 5
   timer: 0
 --- !u!1 &7691238854099484465

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2240625346446864218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 8}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5242dc1980890904086dd519c7ca4fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4.5
+  speed: 4
   rb: {fileID: 6815044160217570169}
   direction: {x: 0, y: 0, z: 0}
   target: {fileID: 1885274930317076418, guid: 1703d0b41e3fcbc458e13aa10490b1f5, type: 3}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 6815044160217570169}
   speed: 4
-  sway: 5
+  sway: 3
   timer: 0
 --- !u!1 &6684442410642075577
 GameObject:
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ffd965e4992d3f4d96068aefdbc4cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1885274930317076418, guid: 1703d0b41e3fcbc458e13aa10490b1f5, type: 3}
+  target: {fileID: 0}
   EBulletPoint: {fileID: 8355428464943066297}
   enemyBullet: {fileID: 5702469278621525354, guid: a4f0027d7b30f5e479a860d669774d10, type: 3}
   canonShoot: 0

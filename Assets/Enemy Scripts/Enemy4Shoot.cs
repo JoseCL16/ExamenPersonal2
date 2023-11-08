@@ -13,6 +13,11 @@ public class Enemy4Shoot : MonoBehaviour
 
     public float radius;
 
+    void Awake()
+    {
+        target = GameObject.Find("Player").GetComponent<Transform>();
+    }
+
     void Update()
     {
         if (Vector3.Distance(transform.position, target.position) <= radius)
