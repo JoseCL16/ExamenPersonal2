@@ -4,23 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceneChange : MonoBehaviour
+public class ExitGame : MonoBehaviour
 {
     public Button button;
-    public string scene;
 
     void Awake()
     {
         button = GetComponent<Button>();
     }
 
+    // Update is called once per frame
     void Start()
     {
-        button.onClick.AddListener(ChangeScene);
+        button.onClick.AddListener(Exit);
     }
 
-    void ChangeScene()
+    void Exit()
     {
-        SceneManager.LoadScene(scene);
+        Application.Quit();
     }
 }

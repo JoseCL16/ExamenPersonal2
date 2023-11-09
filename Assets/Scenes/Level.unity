@@ -5343,7 +5343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 334439330}
-  price: 4
+  price: 6
 --- !u!1 &384279528
 GameObject:
   m_ObjectHideFlags: 0
@@ -42997,7 +42997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2069595654}
-  price: 6
+  price: 5
 --- !u!1 &2105574748
 GameObject:
   m_ObjectHideFlags: 0
