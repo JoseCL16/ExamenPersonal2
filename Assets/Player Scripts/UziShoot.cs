@@ -8,7 +8,7 @@ public class UziShoot : WeaponShoot
     public float maxFireRate;
 
     public int MaxAmmo = 30;
-    [SerializeField] private int Ammo;
+    public static int Ammo;
 
     private void Start()
     {

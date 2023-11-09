@@ -13,13 +13,13 @@ public class EnemyCount : MonoBehaviour
         text = GetComponent<Text>();
     }
 
-    void Update()
+    public void Update()
     {
         text.text = Entities.ToString();
 
         if (Entities == 0)
         {
-            Entities += 11;
+            Entities = 12;
         }
-    }
+    }    
 }

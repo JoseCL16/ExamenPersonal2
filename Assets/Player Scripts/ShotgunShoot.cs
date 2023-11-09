@@ -5,14 +5,14 @@ using UnityEngine;
 public class ShotgunShoot : WeaponShoot
 {
     public int MaxAmmo = 12;
-    [SerializeField] private int Ammo;
+    public static int Shells = 12;
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1") && Ammo > 0)
+        if (Input.GetButtonDown("Fire1") && Shells > 0)
         {
             Shoot();
-            Ammo -= 1;
+            Shells -= 1;
         }
     }
 
