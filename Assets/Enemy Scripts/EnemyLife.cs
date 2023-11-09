@@ -11,6 +11,8 @@ public class EnemyLife : MonoBehaviour
         if (Elife <= 0)
         {
             Destroy(gameObject);
+            CoinCount.coinAmount += 1;
+            EnemyCount.Entities -= 1;
         }
     }
 

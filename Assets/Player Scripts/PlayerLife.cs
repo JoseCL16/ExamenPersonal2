@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerLife : MonoBehaviour
 {
     public int Plife = 10;
 
-
     void Update()
     {
-      if (Plife <=0)
-      {
+        if (Plife <= 0)
+        {
             SceneManager.LoadScene("Defeat");
             Destroy(gameObject);
-      }
+        }
     }
 
     private void OnTriggerEnter(Collider collision)

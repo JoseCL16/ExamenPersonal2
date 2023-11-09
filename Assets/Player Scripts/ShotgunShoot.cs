@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class ShotgunShoot : WeaponShoot
 {
+    public int MaxAmmo = 12;
+    [SerializeField] private int Ammo;
+
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && Ammo > 0)
         {
             Shoot();
+            Ammo -= 1;
         }
     }
 
@@ -27,5 +31,7 @@ public class ShotgunShoot : WeaponShoot
         Quaternion rotation2 = Quaternion.Euler(0, -15, 0);
         Vector3 direction2 = rotation2 * Vector3.forward;
         Instantiate(playerBullet, bulletPoint.position, Quaternion.LookRotation(direction2) * bulletPoint.rotation);
+
+        AmmoCountShotgun.Ammo -= 1;
     }
 }

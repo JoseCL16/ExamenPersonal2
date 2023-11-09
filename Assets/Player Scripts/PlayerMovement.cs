@@ -48,5 +48,3 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(horizontal * speed, rb.velocity.y, vertical * speed);
     }
 }
-
-
