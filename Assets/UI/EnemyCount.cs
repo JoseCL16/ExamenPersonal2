@@ -19,7 +19,7 @@ public class EnemyCount : MonoBehaviour
 
         if (Entities == 0)
         {
-            Entities += 11;
+             Entities += 11;         
         }
     }    
 }
