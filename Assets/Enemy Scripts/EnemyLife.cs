@@ -8,12 +8,7 @@ public class EnemyLife : MonoBehaviour
 
     void Update()
     {
-        if (Elife <= 0)
-        {
-            Destroy(gameObject);
-            CoinCount.coinAmount += 1;
-            EnemyCount.Entities -= 1;
-        }
+       
     }
 
     private void OnTriggerEnter(Collider collision)
@@ -21,6 +16,13 @@ public class EnemyLife : MonoBehaviour
         if (collision.gameObject.CompareTag("PlayerBullet"))
         {
             Elife -= 1;
+
+            if (Elife <= 0)
+            {
+                Destroy(gameObject);
+                CoinCount.coinAmount += 1;
+                EnemyCount.Entities -= 1;
+            }
         }
 
         if (collision.gameObject.CompareTag("Limit"))

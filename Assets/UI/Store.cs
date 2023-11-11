@@ -12,11 +12,11 @@ public class Store : MonoBehaviour
 
     void Update()
     {
-        if (EnemyCount.Entities == 0)
+        if (EnemyCount.Entities <= 0)
         {
             if (StoreIsOpen)
             {
-                CloseStore();
+                //CloseStore();
             }
             else
             {

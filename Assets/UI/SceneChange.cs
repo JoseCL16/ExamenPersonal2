@@ -22,5 +22,12 @@ public class SceneChange : MonoBehaviour
     void ChangeScene()
     {
         SceneManager.LoadScene(scene);
+        AmmoCountShotgun.Ammo = 12;
+        AmmoCountUzi.Ammo = 30;
+        CoinCount.coinAmount = 0;
+        ShotgunShoot.Shells = 12;
+        UziShoot.Ammo = 30;
+        WaveCounter.Wave = 1;
+        EnemyCount.Entities = 10;
     }
 }
